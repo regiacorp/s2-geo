@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/regia-corporation/s2-geo.git"
+    "url": "https://github.com/regiacorp/s2-geo"
   },
   "author": "Craig OConnor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/regia-corporation/s2-geo/issues"
+    "url": "https://github.com/regiacorp/s2-geo/issues"
   },
-  "homepage": "https://github.com/regia-corporation/s2-geo#readme",
+  "homepage": "https://github.com/regiacorp/s2-geo#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
