@@ -1,5 +1,5 @@
 {
-  "name": "s2-geo",
+  "name": "s2-geo-datum",
   "version": "1.0.0",
   "description": "Work with spherical geometry and it's xyz vector normals",
   "main": "lib/index.js",
