@@ -65,12 +65,12 @@ export function lonLatToXYZ (lon: number, lat: number, radius?: number = 1): [nu
   ]
 }
 
-export function radToDeg(r) {
-  return r * 180 / Math.PI
+export function radToDeg (radians: number): number {
+  return radians * 180 / Math.PI
 }
 
-export function degToRad(d) {
-  return d * Math.PI / 180
+export function degToRad (deg: number): number {
+  return deg * Math.PI / 180
 }
 
 export default {
