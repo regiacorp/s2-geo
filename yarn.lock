@@ -3018,6 +3018,11 @@ rxjs@^6.4.0:
   dependencies:
     tslib "^1.9.0"
 
+s2-geo-datum@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/s2-geo-datum/-/s2-geo-datum-1.0.2.tgz#4bf387e1c1df6c9344e51244eb83735e8034e39e"
+  integrity sha512-dFpi4ohnKXLsAds+HPr3krXQWLsDcd+XzkGgbyGlGHSDIF35tMzcQMKB9zrZttKkWsQbFyq0p3LyUr2jfYLOwA==
+
 safe-buffer@^5.1.2:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"

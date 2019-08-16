@@ -51,22 +51,13 @@ export function faceXYZtoUV (face: Face, x: number, y: number, z: number): [numb
   }
 }
 
-// export function xyzToLonLat (x: number, y: number, z: number, radius?: number = 1): [number, number] {
-//   return [radToDeg(Math.atan2(y, x)), radToDeg(Math.asin(z / radius))]
-// }
 export function xyzToLonLat (x: number, y: number, z: number, radius?: number = 1): [number, number] {
-  return [radToDeg(Math.atan2(z, x)), radToDeg(Math.asin(y / radius))]
+  return [
+    radToDeg(Math.atan2(z, x)),
+    radToDeg(Math.atan2(y, Math.sqrt(x * x + z * z)))
+  ]
 }
 
-// export function lonLatToXYZ (lon: number, lat: number, radius?: number = 1): [number, number, number] {
-//   lon = degToRad(lon)
-//   lat = degToRad(lat)
-//   return [
-//     radius * Math.cos(lat) * Math.cos(lon), // x
-//     radius * Math.cos(lat) * Math.sin(lon), // y
-//     radius * Math.sin(lat) // z
-//   ]
-// }
 export function lonLatToXYZ (lon: number, lat: number, radius?: number = 1): [number, number, number] {
   lon = degToRad(lon)
   lat = degToRad(lat)
