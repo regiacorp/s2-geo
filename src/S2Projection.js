@@ -53,8 +53,8 @@ export function faceXYZtoUV (face: Face, x: number, y: number, z: number): [numb
 
 export function xyzToLonLat (x: number, y: number, z: number, radius?: number = 1): [number, number] {
   return [
-    radToDeg(Math.atan2(z, x)),
-    radToDeg(Math.atan2(y, Math.sqrt(x * x + z * z)))
+    radToDeg(Math.atan2(y, x)),
+    radToDeg(Math.atan2(z, Math.sqrt(x * x + y * y)))
   ]
 }
 
@@ -63,8 +63,8 @@ export function lonLatToXYZ (lon: number, lat: number, radius?: number = 1): [nu
   lat = degToRad(lat)
   return [
     radius * Math.cos(lat) * Math.cos(lon), // x
-    radius * Math.sin(lat), // y
-    radius * Math.cos(lat) * Math.sin(lon) // z
+    radius * Math.cos(lat) * Math.sin(lon), // y
+    radius * Math.sin(lat), // z
   ]
 }
 

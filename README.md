@@ -9,6 +9,8 @@
 
 ## About
 
+NOTE: This differs from the original S2 Library in that the y and z axis are swapped as 3D libraries like WebGL handle the axis differently... we work with WebGL over S2 in this case
+
 **Create new modules with this skeleton**
 
 ```sh
